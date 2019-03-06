@@ -1,0 +1,29 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: #06052b;
+}
+
+a.navbar-item{
+    height: 200px;
+}
+
+.hero.is-primary a.navbar-item:hover, .hero.is-primary a.navbar-item.is-active, .hero.is-primary .navbar-link:hover, .hero.is-primary .navbar-link.is-active{
+    background-color: transparent;
+}
+
+a.img{
+    height: 300px;
+}
+
+.navbar-item img{
+    max-height: 120px !important;
+}
+
+.hero.is-primary{
+    background-color:  #06052b;
+}
+
+.navbar > .container {
+    margin-left: 3%;
+}
