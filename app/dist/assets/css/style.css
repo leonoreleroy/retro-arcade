@@ -1,33 +1,21 @@
-html,
-body {
-  overflow-x: hidden;
-  max-width: 100%;
-  background-color: #06052b;
+a {
+  font-size: 3em;
+  font-weight: 700;
+  position: relative;
+  display: block;
+  width: 100px;
+  margin: 100px auto;
+  transition: all .1s ease;
+  text-align: center;
+  text-decoration: none;
+  color: #838295;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 9px 0 #838295, 0 9px 25px rgba(0, 0, 0, .7);
 }
 
-a.navbar-item {
-  height: 200px;
-}
-
-.hero.is-primary a.navbar-item:hover,
-.hero.is-primary a.navbar-item.is-active,
-.hero.is-primary .navbar-link:hover,
-.hero.is-primary .navbar-link.is-active {
-  background-color: transparent;
-}
-
-a.img {
-  height: 300px;
-}
-
-.navbar-item img {
-  max-height: 120px !important;
-}
-
-.hero.is-primary {
-  background-color: #06052b;
-}
-
-.navbar > .container {
-  margin-left: 3%;
+a:active {
+  position: relative;
+  top: 6px;
+  box-shadow: 0 3px 0 #838295, 0 3px 6px rgba(0, 0, 0, .9);
 }
