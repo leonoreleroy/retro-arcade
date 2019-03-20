@@ -30,33 +30,70 @@
       </div>
     </section>
 
-
         <section class="arrow-buttons">
           <div class="arrow-buttons-column">
-              <a class="roundButton6" href="javascript:void(0);">&#9650</a>
-              <a class="roundButton7" href="javascript:void(0);">&#9660</a>
+              <a class="arrow-top" href="javascript:void(0);">&#9650</a>
+              <a class="arrow-bottom" href="javascript:void(0);">&#9660</a>
           </div>
           <div class="arrow-buttons-row">
-              <a class="roundButton8" href="javascript:void(0);">&#9664</a>
-              <a class="roundButton5" href="javascript:void(0);">&#9654</a>
-          </div>
-        </section>
-
-        <section class="buttons-bottom">
-          <div class="duo-text-button1">
-            <a class="roundButton3" href="javascript:void(0);"></a>
-            <p class="info-button">Explications</p>
-          </div>
-          <div class="duo-text-button2">
-            <a class="roundButton4" href="javascript:void(0);"></a>
-            <p class="info-button">Classement des jeux</p>
+              <a class="arrow-left" href="javascript:void(0);">&#9664</a>
+              <a class="arrow-right" href="javascript:void(0);">&#9654</a>
           </div>
         </section>
       
           <section class="buttons-right">
-            <a class="roundButton1" href="javascript:void(0);">A</a>
-            <a class="roundButton2" href="javascript:void(0);">B</a>
+            <a class="roundButton button-A" href="javascript:void(0);">A</a>
+            <a class="roundButton button-B" href="javascript:void(0);">B</a>
           </section>
+
+          <section class="buttons-bottom">
+              <div class="container" id="app">
+                  <div class="modal">
+                    <div class="modal-background"></div>
+                    <div class="modal-content">
+                      <h1>Explication</h1>
+                      <p>A : Commencer à jouer</p>
+                      <p>B : Voter</p>
+                      <p>Flèches : changer de jeux et voir plus d'image du jeux</p>
+                    </div>
+                    <button class="modal-close"></button>
+                  </div>
+                  
+                  <div class="explications">
+                    <button class="button roundButton" id="showModal"></button>
+                    <p class="info-button">Explications</p>
+                  </div>
+                </div>
+                
+                <!-- <div class="container" id="app">
+                    <div class="modal">
+                      <div class="modal-background"></div>
+                      <div class="modal-content">
+                        <h2>Classement des jeux</h2>
+                        <p>1.</p>
+                        <p>2.</p>
+                        <p>3.</p>
+                        <p>4.</p>
+                        <p>5.</p>
+                        <p>6.</p>
+                        <p>7.</p>
+                        <p>8.</p>
+                        <p>9.</p>
+                        <p>10.</p>
+                        <p>11.</p>
+                      </div>
+                      <button class="modal-close"></button>
+                    </div>
+                    
+                    <p>
+                      <button class="button roundButton4" id="showModal"></button>
+                      <p class="info-button">Classement des jeux</p>
+                    </p>
+                  </div> -->
+                <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+                <script  src="js/index.js"></script>
+          </section>
+          
  
 </body>
 

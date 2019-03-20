@@ -1,11 +1,20 @@
+// Variables
+$bgcolor: #06052b;
+$shadow: #838295;
+
+// Mixins
+@mixin height($val) {
+    height: $val;
+}
+
 html, body {
     max-width: 100%;
     overflow-x: hidden;
-    background-color: #06052b;
+    background-color: $bgcolor;
 }
 
 a.navbar-item{
-    height: 200px;
+    @include height(200px);
 }
 
 .hero.is-primary a.navbar-item:hover, .hero.is-primary a.navbar-item.is-active, .hero.is-primary .navbar-link:hover, .hero.is-primary .navbar-link.is-active{
@@ -13,7 +22,7 @@ a.navbar-item{
 }
 
 a.img{
-    height: 300px;
+    @include height(300px);
 }
 
 .navbar-item img{
@@ -21,18 +30,18 @@ a.img{
 }
 
 .hero.is-primary{
-    background-color:  #06052b;
+    background-color:  $bgcolor;
 }
 
 .navbar > .container {
     margin-left: 3%;
 }
 
-//3D Round button
-
-a.roundButton1, a.roundButton2, a.roundButton5, a.roundButton6, a.roundButton7, a.roundButton8{
+// Imbrication
+//3D Round button 
+.roundButton{
 	position: relative;
-    color: #838295;
+    color: $shadow;
     text-decoration: none;
     background-color: #ffffff;
     font-weight: 700;
@@ -41,11 +50,11 @@ a.roundButton1, a.roundButton2, a.roundButton5, a.roundButton6, a.roundButton7, 
     -webkit-border-radius: 200px;
     -moz-border-radius: 200px;
     border-radius: 200px;
-    -webkit-box-shadow: 0px 5px 0px #838295, 0px 5px 25px rgba(0,0,0,.7);
-    -moz-box-shadow: 0px 5px 0px #838295, 0px 5px 25px rgba(0,0,0,.7);
-    box-shadow: 0px 5px 0px #838295, 0px 5px 25px rgba(0,0,0,.7);
+    -webkit-box-shadow: 0px 5px 0px $shadow, 0px 5px 25px rgba(0,0,0,.7);
+    -moz-box-shadow: 0px 5px 0px $shadow, 0px 5px 25px rgba(0,0,0,.7);
+    box-shadow: 0px 5px 0px $shadow, 0px 5px 25px rgba(0,0,0,.7);
     width: 40px;
-    height: 40px;
+    @include height(40px);
     text-align: center;
     
     -webkit-transition: all .1s ease;
@@ -54,122 +63,27 @@ a.roundButton1, a.roundButton2, a.roundButton5, a.roundButton6, a.roundButton7, 
     -o-transition: all .1s ease;
     transition: all .1s ease;
     
+    // Sélecteur parent
     &:active {
-        -webkit-box-shadow: 0px 3px 0px #838295, 0px 3px 6px rgba(0,0,0,.9);
-        -moz-box-shadow: 0px 3px 0px #838295, 0px 3px 6px rgba(0,0,0,.9);
-        box-shadow: 0px 3px 0px #838295, 0px 3px 6px rgba(0,0,0,.9);
+        -webkit-box-shadow: 0px 3px 0px $shadow, 0px 3px 6px rgba(0,0,0,.9);
+        -moz-box-shadow: 0px 3px 0px $shadow, 0px 3px 6px rgba(0,0,0,.9);
+        box-shadow: 0px 3px 0px $shadow, 0px 3px 6px rgba(0,0,0,.9);
         position: relative;
         top: 6px;
     }
 }
 
-a.roundButton3, a.roundButton4 {
-	position: relative;
-    color: #838295;
-    text-decoration: none;
-    background-color: #ffffff;
-    font-weight: 700;
-    font-size: 3em;
-    display: block;
-    -webkit-border-radius: 200px;
-    -moz-border-radius: 200px;
-    border-radius: 200px;
-    -webkit-box-shadow: 0px 4px 0px #838295, 0px 9px 25px rgba(0,0,0,.7);
-    -moz-box-shadow: 0px 4px 0px #838295, 0px 9px 25px rgba(0,0,0,.7);
-    box-shadow: 0px 4px 0px #838295, 0px 9px 25px rgba(0,0,0,.7);
-    width: 20px;
-    height: 20px;
-	text-align: center;
-	
-	-webkit-transition: all .1s ease;
-	-moz-transition: all .1s ease;
-	-ms-transition: all .1s ease;
-	-o-transition: all .1s ease;
-	transition: all .1s ease;
-}
-
-a.roundButton1:active {
-    -webkit-box-shadow: 0px 3px 0px #838295, 0px 3px 6px rgba(0,0,0,.9);
-    -moz-box-shadow: 0px 3px 0px #838295, 0px 3px 6px rgba(0,0,0,.9);
-    box-shadow: 0px 3px 0px #838295, 0px 3px 6px rgba(0,0,0,.9);
-    position: relative;
-    top: 6px;
-}
-
-a.roundButton2:active {
-  -webkit-box-shadow: 0px 3px 0px #838295, 0px 3px 6px rgba(0,0,0,.9);
-  -moz-box-shadow: 0px 3px 0px #838295, 0px 3px 6px rgba(0,0,0,.9);
-  box-shadow: 0px 3px 0px #838295, 0px 3px 6px rgba(0,0,0,.9);
-  position: relative;
-  top: 6px;
-}
-
-a.roundButton3:active {
-  -webkit-box-shadow: 0px 3px 0px #838295, 0px 3px 6px rgba(0,0,0,.9);
-  -moz-box-shadow: 0px 3px 0px #838295, 0px 3px 6px rgba(0,0,0,.9);
-  box-shadow: 0px 3px 0px #838295, 0px 3px 6px rgba(0,0,0,.9);
-  position: relative;
-  top: 6px;
-}
-
-a.roundButton4:active {
-  -webkit-box-shadow: 0px 3px 0px #838295, 0px 3px 6px rgba(0,0,0,.9);
-  -moz-box-shadow: 0px 3px 0px #838295, 0px 3px 6px rgba(0,0,0,.9);
-  box-shadow: 0px 3px 0px #838295, 0px 3px 6px rgba(0,0,0,.9);
-  position: relative;
-  top: 6px;
-}
-
-a.roundButton5:active {
-  -webkit-box-shadow: 0px 3px 0px #838295, 0px 3px 6px rgba(0,0,0,.9);
-  -moz-box-shadow: 0px 3px 0px #838295, 0px 3px 6px rgba(0,0,0,.9);
-  box-shadow: 0px 3px 0px #838295, 0px 3px 6px rgba(0,0,0,.9);
-  position: relative;
-  top: 6px;
-}
-
-a.roundButton6:active {
-  -webkit-box-shadow: 0px 3px 0px #838295, 0px 3px 6px rgba(0,0,0,.9);
-  -moz-box-shadow: 0px 3px 0px #838295, 0px 3px 6px rgba(0,0,0,.9);
-  box-shadow: 0px 3px 0px #838295, 0px 3px 6px rgba(0,0,0,.9);
-  position: relative;
-  top: 6px;
-}
-
-a.roundButton7:active {
-  -webkit-box-shadow: 0px 3px 0px #838295, 0px 3px 6px rgba(0,0,0,.9);
-  -moz-box-shadow: 0px 3px 0px #838295, 0px 3px 6px rgba(0,0,0,.9);
-  box-shadow: 0px 3px 0px #838295, 0px 3px 6px rgba(0,0,0,.9);
-  position: relative;
-  top: 6px;
-}
-
-a.roundButton8:active {
-  -webkit-box-shadow: 0px 3px 0px #838295, 0px 3px 6px rgba(0,0,0,.9);
-  -moz-box-shadow: 0px 3px 0px #838295, 0px 3px 6px rgba(0,0,0,.9);
-  box-shadow: 0px 3px 0px #838295, 0px 3px 6px rgba(0,0,0,.9);
-  position: relative;
-  top: 6px;
-}
-
-a.roundButton1{
+.button-A{
   margin-bottom: 40px;
   margin-left: 80px;
 }
 
 .buttons-right{
   margin-bottom: 40px;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: flex-end;
   position: absolute;
- right: 5%;
- top: 40%;
+  right: 5%;
+  top: 40%;
 }
-
-// a.roundButton4{
-//   margin-top: 38px;
-// }
 
 .buttons-bottom{
   margin-bottom: 15px;
@@ -184,28 +98,18 @@ p.info-button{
   margin-left: 20px;
 }
 
-
-.duo-text-button1, .duo-text-button2{
-  display : flex;
-  flex-direction: row;
-}
-
-.duo-text-button2{
-  margin-top: 30px;
-}
-
 .arrow-buttons{
   margin-bottom: 15px;
   display: flex;
   flex-direction: column;
-}
 
-.arrow-buttons-column{
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  left: 10%;
-  top: 40%;
+  .arrow-buttons-column{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 10%;
+    top: 40%;
+  }
 }
 
 .arrow-buttons-row{
@@ -216,18 +120,70 @@ p.info-button{
   top: 48%;
 }
 
-a.roundButton8{
+// Extend
+.arrow {
+    position: relative;
+    color: $shadow;
+    text-decoration: none;
+    background-color: #ffffff;
+    font-weight: 700;
+    font-size: 1em;
+    display: block;
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+    border-radius: 200px;
+    -webkit-box-shadow: 0px 5px 0px $shadow, 0px 5px 25px rgba(0,0,0,.7);
+    -moz-box-shadow: 0px 5px 0px $shadow, 0px 5px 25px rgba(0,0,0,.7);
+    box-shadow: 0px 5px 0px $shadow, 0px 5px 25px rgba(0,0,0,.7);
+    width: 40px;
+    @include height(40px);
+    text-align: center;
+    
+    -webkit-transition: all .1s ease;
+    -moz-transition: all .1s ease;
+    -ms-transition: all .1s ease;
+    -o-transition: all .1s ease;
+    transition: all .1s ease;
+    
+    // Sélecteur parent
+    &:active {
+        -webkit-box-shadow: 0px 3px 0px $shadow, 0px 3px 6px rgba(0,0,0,.9);
+        -moz-box-shadow: 0px 3px 0px $shadow, 0px 3px 6px rgba(0,0,0,.9);
+        box-shadow: 0px 3px 0px $shadow, 0px 3px 6px rgba(0,0,0,.9);
+        position: relative;
+        top: 6px;
+    }
+}
+
+.arrow-left{
+    @extend .arrow ;
   margin-right: 10px;
 }
 
-a.roundButton5{
+.arrow-right{
+    @extend .arrow ;
   margin-left: 50px;
 }
 
-a.roundButton6{
+.arrow-top{
+    @extend .arrow ;
   margin-bottom: 20px;
 }
 
-a.roundButton7{
+.arrow-bottom{
+    @extend .arrow ;
   margin-top: 35px;
+}
+
+// Button explications
+.button {
+    padding: 0;
+    width: 20px;
+    @include height(20px);
+}
+
+.explications{
+    display:  flex;
+    position: fixed;
+    right: 100px;
 }

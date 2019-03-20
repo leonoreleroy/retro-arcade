@@ -32,12 +32,7 @@ a.img {
   margin-left: 3%;
 }
 
-a.roundButton1,
-a.roundButton2,
-a.roundButton5,
-a.roundButton6,
-a.roundButton7,
-a.roundButton8 {
+.roundButton {
   font-size: 1em;
   font-weight: 700;
   position: relative;
@@ -53,83 +48,13 @@ a.roundButton8 {
   box-shadow: 0 5px 0 #838295, 0 5px 25px rgba(0, 0, 0, .7);
 }
 
-a.roundButton1:active,
-a.roundButton2:active,
-a.roundButton5:active,
-a.roundButton6:active,
-a.roundButton7:active,
-a.roundButton8:active {
+.roundButton:active {
   position: relative;
   top: 6px;
   box-shadow: 0 3px 0 #838295, 0 3px 6px rgba(0, 0, 0, .9);
 }
 
-a.roundButton3,
-a.roundButton4 {
-  font-size: 3em;
-  font-weight: 700;
-  position: relative;
-  display: block;
-  width: 20px;
-  height: 20px;
-  transition: all .1s ease;
-  text-align: center;
-  text-decoration: none;
-  color: #838295;
-  border-radius: 200px;
-  background-color: #fff;
-  box-shadow: 0 4px 0 #838295, 0 9px 25px rgba(0, 0, 0, .7);
-}
-
-a.roundButton1:active {
-  position: relative;
-  top: 6px;
-  box-shadow: 0 3px 0 #838295, 0 3px 6px rgba(0, 0, 0, .9);
-}
-
-a.roundButton2:active {
-  position: relative;
-  top: 6px;
-  box-shadow: 0 3px 0 #838295, 0 3px 6px rgba(0, 0, 0, .9);
-}
-
-a.roundButton3:active {
-  position: relative;
-  top: 6px;
-  box-shadow: 0 3px 0 #838295, 0 3px 6px rgba(0, 0, 0, .9);
-}
-
-a.roundButton4:active {
-  position: relative;
-  top: 6px;
-  box-shadow: 0 3px 0 #838295, 0 3px 6px rgba(0, 0, 0, .9);
-}
-
-a.roundButton5:active {
-  position: relative;
-  top: 6px;
-  box-shadow: 0 3px 0 #838295, 0 3px 6px rgba(0, 0, 0, .9);
-}
-
-a.roundButton6:active {
-  position: relative;
-  top: 6px;
-  box-shadow: 0 3px 0 #838295, 0 3px 6px rgba(0, 0, 0, .9);
-}
-
-a.roundButton7:active {
-  position: relative;
-  top: 6px;
-  box-shadow: 0 3px 0 #838295, 0 3px 6px rgba(0, 0, 0, .9);
-}
-
-a.roundButton8:active {
-  position: relative;
-  top: 6px;
-  box-shadow: 0 3px 0 #838295, 0 3px 6px rgba(0, 0, 0, .9);
-}
-
-a.roundButton1 {
+.button-A {
   margin-bottom: 40px;
   margin-left: 80px;
 }
@@ -154,23 +79,13 @@ p.info-button {
   color: white;
 }
 
-.duo-text-button1,
-.duo-text-button2 {
-  display: flex;
-  flex-direction: row;
-}
-
-.duo-text-button2 {
-  margin-top: 30px;
-}
-
 .arrow-buttons {
   display: flex;
   flex-direction: column;
   margin-bottom: 15px;
 }
 
-.arrow-buttons-column {
+.arrow-buttons .arrow-buttons-column {
   position: absolute;
   top: 40%;
   left: 10%;
@@ -186,18 +101,60 @@ p.info-button {
   flex-direction: row;
 }
 
-a.roundButton8 {
+.arrow,
+.arrow-left,
+.arrow-right,
+.arrow-top,
+.arrow-bottom {
+  font-size: 1em;
+  font-weight: 700;
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 40px;
+  transition: all .1s ease;
+  text-align: center;
+  text-decoration: none;
+  color: #838295;
+  border-radius: 200px;
+  background-color: #fff;
+  box-shadow: 0 5px 0 #838295, 0 5px 25px rgba(0, 0, 0, .7);
+}
+
+.arrow:active,
+.arrow-left:active,
+.arrow-right:active,
+.arrow-top:active,
+.arrow-bottom:active {
+  position: relative;
+  top: 6px;
+  box-shadow: 0 3px 0 #838295, 0 3px 6px rgba(0, 0, 0, .9);
+}
+
+.arrow-left {
   margin-right: 10px;
 }
 
-a.roundButton5 {
+.arrow-right {
   margin-left: 50px;
 }
 
-a.roundButton6 {
+.arrow-top {
   margin-bottom: 20px;
 }
 
-a.roundButton7 {
+.arrow-bottom {
   margin-top: 35px;
+}
+
+.button {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+}
+
+.explications {
+  position: fixed;
+  right: 100px;
+  display: flex;
 }
