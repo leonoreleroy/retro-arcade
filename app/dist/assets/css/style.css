@@ -32,28 +32,18 @@ a.img {
   margin-left: 3%;
 }
 
-<<<<<<< HEAD
-a {
-  font-size: 1em;
-  font-weight: 700;
-  position: relative;
-  display: block;
-  width: 40px;
-  height: 40px;
-=======
 a.roundButton1,
 a.roundButton2,
 a.roundButton5,
 a.roundButton6,
 a.roundButton7,
 a.roundButton8 {
-  font-size: 3em;
+  font-size: 1em;
   font-weight: 700;
   position: relative;
   display: block;
-  width: 80px;
-  height: 80px;
->>>>>>> f70c791ce2d994545a9046eb070ac32f71a8c67a
+  width: 40px;
+  height: 40px;
   transition: all .1s ease;
   text-align: center;
   text-decoration: none;
@@ -61,6 +51,17 @@ a.roundButton8 {
   border-radius: 200px;
   background-color: #fff;
   box-shadow: 0 5px 0 #838295, 0 5px 25px rgba(0, 0, 0, .7);
+}
+
+a.roundButton1:active,
+a.roundButton2:active,
+a.roundButton5:active,
+a.roundButton6:active,
+a.roundButton7:active,
+a.roundButton8:active {
+  position: relative;
+  top: 6px;
+  box-shadow: 0 3px 0 #838295, 0 3px 6px rgba(0, 0, 0, .9);
 }
 
 a.roundButton3,
