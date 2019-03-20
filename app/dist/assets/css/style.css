@@ -172,15 +172,15 @@ p.info-button {
 
 .arrow-buttons-column {
   position: absolute;
-  top: 41%;
-  left: 8%;
+  top: 40%;
+  left: 10%;
   display: flex;
   flex-direction: column;
 }
 
 .arrow-buttons-row {
   position: absolute;
-  top: 50%;
+  top: 48%;
   left: 6%;
   display: flex;
   flex-direction: row;
@@ -191,13 +191,13 @@ a.roundButton8 {
 }
 
 a.roundButton5 {
-  margin-left: 10px;
+  margin-left: 50px;
 }
 
 a.roundButton6 {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 a.roundButton7 {
-  margin-top: 50px;
+  margin-top: 35px;
 }
