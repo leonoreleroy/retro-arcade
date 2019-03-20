@@ -32,6 +32,7 @@ a.img {
   margin-left: 3%;
 }
 
+<<<<<<< HEAD
 a {
   font-size: 1em;
   font-weight: 700;
@@ -39,6 +40,20 @@ a {
   display: block;
   width: 40px;
   height: 40px;
+=======
+a.roundButton1,
+a.roundButton2,
+a.roundButton5,
+a.roundButton6,
+a.roundButton7,
+a.roundButton8 {
+  font-size: 3em;
+  font-weight: 700;
+  position: relative;
+  display: block;
+  width: 80px;
+  height: 80px;
+>>>>>>> f70c791ce2d994545a9046eb070ac32f71a8c67a
   transition: all .1s ease;
   text-align: center;
   text-decoration: none;
@@ -48,8 +63,111 @@ a {
   box-shadow: 0 5px 0 #838295, 0 5px 25px rgba(0, 0, 0, .7);
 }
 
-a:active {
+a.roundButton3,
+a.roundButton4 {
+  font-size: 3em;
+  font-weight: 700;
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 20px;
+  transition: all .1s ease;
+  text-align: center;
+  text-decoration: none;
+  color: #838295;
+  border-radius: 200px;
+  background-color: #fff;
+  box-shadow: 0 4px 0 #838295, 0 9px 25px rgba(0, 0, 0, .7);
+}
+
+a.roundButton1:active {
   position: relative;
   top: 6px;
   box-shadow: 0 3px 0 #838295, 0 3px 6px rgba(0, 0, 0, .9);
+}
+
+a.roundButton2:active {
+  position: relative;
+  top: 6px;
+  box-shadow: 0 3px 0 #838295, 0 3px 6px rgba(0, 0, 0, .9);
+}
+
+a.roundButton3:active {
+  position: relative;
+  top: 6px;
+  box-shadow: 0 3px 0 #838295, 0 3px 6px rgba(0, 0, 0, .9);
+}
+
+a.roundButton4:active {
+  position: relative;
+  top: 6px;
+  box-shadow: 0 3px 0 #838295, 0 3px 6px rgba(0, 0, 0, .9);
+}
+
+a.roundButton5:active {
+  position: relative;
+  top: 6px;
+  box-shadow: 0 3px 0 #838295, 0 3px 6px rgba(0, 0, 0, .9);
+}
+
+a.roundButton6:active {
+  position: relative;
+  top: 6px;
+  box-shadow: 0 3px 0 #838295, 0 3px 6px rgba(0, 0, 0, .9);
+}
+
+a.roundButton7:active {
+  position: relative;
+  top: 6px;
+  box-shadow: 0 3px 0 #838295, 0 3px 6px rgba(0, 0, 0, .9);
+}
+
+a.roundButton8:active {
+  position: relative;
+  top: 6px;
+  box-shadow: 0 3px 0 #838295, 0 3px 6px rgba(0, 0, 0, .9);
+}
+
+a.roundButton1 {
+  margin-bottom: 40px;
+  margin-left: 80px;
+}
+
+.buttons-right {
+  position: absolute;
+  top: 40%;
+  right: 5%;
+  margin-bottom: 40px;
+}
+
+.buttons-bottom {
+  position: absolute;
+  top: 85%;
+  right: 5%;
+  margin-bottom: 15px;
+}
+
+p.info-button {
+  font-family: 'roboto';
+  margin-left: 20px;
+  color: white;
+}
+
+.duo-text-button1,
+.duo-text-button2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.duo-text-button2 {
+  margin-top: 30px;
+}
+
+.arrow-buttons {
+  margin-bottom: 15px;
+}
+
+.arrow-buttons-column {
+  display: flex;
+  flex-direction: column;
 }
