@@ -30,7 +30,7 @@ a.img{
 
 //3D Round button
 
-a.roundButton1, a.roundButton2{
+a.roundButton1, a.roundButton2, a.roundButton5, a.roundButton6, a.roundButton7, a.roundButton8{
 	position: relative;
     color: #838295;
     text-decoration: none;
@@ -112,6 +112,38 @@ a.roundButton4:active {
   top: 6px;
 }
 
+a.roundButton5:active {
+  -webkit-box-shadow: 0px 3px 0px #838295, 0px 3px 6px rgba(0,0,0,.9);
+  -moz-box-shadow: 0px 3px 0px #838295, 0px 3px 6px rgba(0,0,0,.9);
+  box-shadow: 0px 3px 0px #838295, 0px 3px 6px rgba(0,0,0,.9);
+  position: relative;
+  top: 6px;
+}
+
+a.roundButton6:active {
+  -webkit-box-shadow: 0px 3px 0px #838295, 0px 3px 6px rgba(0,0,0,.9);
+  -moz-box-shadow: 0px 3px 0px #838295, 0px 3px 6px rgba(0,0,0,.9);
+  box-shadow: 0px 3px 0px #838295, 0px 3px 6px rgba(0,0,0,.9);
+  position: relative;
+  top: 6px;
+}
+
+a.roundButton7:active {
+  -webkit-box-shadow: 0px 3px 0px #838295, 0px 3px 6px rgba(0,0,0,.9);
+  -moz-box-shadow: 0px 3px 0px #838295, 0px 3px 6px rgba(0,0,0,.9);
+  box-shadow: 0px 3px 0px #838295, 0px 3px 6px rgba(0,0,0,.9);
+  position: relative;
+  top: 6px;
+}
+
+a.roundButton8:active {
+  -webkit-box-shadow: 0px 3px 0px #838295, 0px 3px 6px rgba(0,0,0,.9);
+  -moz-box-shadow: 0px 3px 0px #838295, 0px 3px 6px rgba(0,0,0,.9);
+  box-shadow: 0px 3px 0px #838295, 0px 3px 6px rgba(0,0,0,.9);
+  position: relative;
+  top: 6px;
+}
+
 a.roundButton1{
   margin-bottom: 40px;
   margin-left: 80px;
@@ -152,4 +184,14 @@ p.info-button{
 
 .duo-text-button2{
   margin-top: 30px;
+}
+
+.arrow-buttons{
+  margin-bottom: 15px;
+}
+
+.arrow-buttons-column{
+  display: flex;
+  flex-direction: column;
+
 }

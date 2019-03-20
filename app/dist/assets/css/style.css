@@ -33,7 +33,11 @@ a.img {
 }
 
 a.roundButton1,
-a.roundButton2 {
+a.roundButton2,
+a.roundButton5,
+a.roundButton6,
+a.roundButton7,
+a.roundButton8 {
   font-size: 3em;
   font-weight: 700;
   position: relative;
@@ -90,6 +94,30 @@ a.roundButton4:active {
   box-shadow: 0 3px 0 #838295, 0 3px 6px rgba(0, 0, 0, .9);
 }
 
+a.roundButton5:active {
+  position: relative;
+  top: 6px;
+  box-shadow: 0 3px 0 #838295, 0 3px 6px rgba(0, 0, 0, .9);
+}
+
+a.roundButton6:active {
+  position: relative;
+  top: 6px;
+  box-shadow: 0 3px 0 #838295, 0 3px 6px rgba(0, 0, 0, .9);
+}
+
+a.roundButton7:active {
+  position: relative;
+  top: 6px;
+  box-shadow: 0 3px 0 #838295, 0 3px 6px rgba(0, 0, 0, .9);
+}
+
+a.roundButton8:active {
+  position: relative;
+  top: 6px;
+  box-shadow: 0 3px 0 #838295, 0 3px 6px rgba(0, 0, 0, .9);
+}
+
 a.roundButton1 {
   margin-bottom: 40px;
   margin-left: 80px;
@@ -123,4 +151,13 @@ p.info-button {
 
 .duo-text-button2 {
   margin-top: 30px;
+}
+
+.arrow-buttons {
+  margin-bottom: 15px;
+}
+
+.arrow-buttons-column {
+  display: flex;
+  flex-direction: column;
 }
