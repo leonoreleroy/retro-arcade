@@ -165,10 +165,39 @@ p.info-button {
 }
 
 .arrow-buttons {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 15px;
 }
 
 .arrow-buttons-column {
+  position: absolute;
+  top: 41%;
+  left: 8%;
   display: flex;
   flex-direction: column;
+}
+
+.arrow-buttons-row {
+  position: absolute;
+  top: 50%;
+  left: 6%;
+  display: flex;
+  flex-direction: row;
+}
+
+a.roundButton8 {
+  margin-right: 10px;
+}
+
+a.roundButton5 {
+  margin-left: 10px;
+}
+
+a.roundButton6 {
+  margin-bottom: 50px;
+}
+
+a.roundButton7 {
+  margin-top: 50px;
 }
