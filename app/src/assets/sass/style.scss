@@ -158,16 +158,33 @@ p.info-button{
 }
 
 // Button explications
-.button {
-    padding: 0;
-    width: 20px;
-    @include height(20px);
+
+.modal-content {
+  text-align: center;
+  color: white;
+
+  h2 {
+    font-weight: bold;
+    font-size: xx-large;
+    color: #dd1be2;
+    margin-bottom: 20px;
+  }
+
+  span {
+    font-weight: bold;
+  }
 }
 
-.explications{
+.explications {
     display:  flex;
     position: fixed;
     right: 100px;
+
+    .button {
+      padding: 0;
+      width: 20px;
+      @include height(20px);
+  }
 }
 
 //Carousel

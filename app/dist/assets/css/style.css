@@ -127,16 +127,32 @@ p.info-button {
   margin-left: 50px;
 }
 
-.button {
-  width: 20px;
-  height: 20px;
-  padding: 0;
+.modal-content {
+  text-align: center;
+  color: white;
+}
+
+.modal-content h2 {
+  font-size: xx-large;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #dd1be2;
+}
+
+.modal-content span {
+  font-weight: bold;
 }
 
 .explications {
   position: fixed;
   right: 100px;
   display: flex;
+}
+
+.explications .button {
+  width: 20px;
+  height: 20px;
+  padding: 0;
 }
 
 * {
