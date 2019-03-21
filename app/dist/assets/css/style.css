@@ -85,14 +85,6 @@ p.info-button {
   margin-bottom: 15px;
 }
 
-.arrow-buttons .arrow-buttons-column {
-  position: absolute;
-  top: 40%;
-  left: 10%;
-  display: flex;
-  flex-direction: column;
-}
-
 .arrow-buttons-row {
   position: absolute;
   top: 48%;
@@ -103,9 +95,7 @@ p.info-button {
 
 .arrow,
 .arrow-left,
-.arrow-right,
-.arrow-top,
-.arrow-bottom {
+.arrow-right {
   font-size: 1em;
   font-weight: 700;
   position: relative;
@@ -123,9 +113,7 @@ p.info-button {
 
 .arrow:active,
 .arrow-left:active,
-.arrow-right:active,
-.arrow-top:active,
-.arrow-bottom:active {
+.arrow-right:active {
   position: relative;
   top: 6px;
   box-shadow: 0 3px 0 #838295, 0 3px 6px rgba(0, 0, 0, .9);
@@ -139,14 +127,6 @@ p.info-button {
   margin-left: 50px;
 }
 
-.arrow-top {
-  margin-bottom: 20px;
-}
-
-.arrow-bottom {
-  margin-top: 35px;
-}
-
 .button {
   width: 20px;
   height: 20px;
@@ -157,4 +137,135 @@ p.info-button {
   position: fixed;
   right: 100px;
   display: flex;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.slider {
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  overflow: hidden;
+  width: 1000px;
+  text-align: center;
+}
+
+.slider .slides {
+  display: flex;
+  overflow-x: hidden;
+  border-radius: 5px;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  -ms-scroll-snap-points-x: repeat(1000px);
+      scroll-snap-points-x: repeat(1000px);
+  -ms-scroll-snap-type: mandatory;
+      scroll-snap-type: mandatory;
+}
+
+.slider .slides::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.slider .slides::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: black;
+}
+
+.slider .slides::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.slider .slides > div {
+  font-size: 100px;
+  position: relative;
+  display: flex;
+  width: 1300px;
+  height: 500px;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  border-radius: 10px;
+  background: #eee;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider .slides > div:target {
+  -webkit-transform: scale(.8);
+          transform: scale(.8);
+}
+
+.author-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: .75rem;
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, .75);
+}
+
+.author-info a {
+  color: white;
+}
+
+img.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.slider > a {
+  position: relative;
+  display: inline-flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0 0 .5rem 0;
+  text-decoration: none;
+  border-radius: 50%;
+  background: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider > a:active {
+  top: 1px;
+}
+
+.slider > a:focus {
+  background: #000;
+}
+
+.content-slide {
+  display: flex;
+  flex-direction: row;
+}
+
+.text-slide {
+  display: flex;
+  flex-direction: row;
+}
+
+p.name-game {
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  right: 3%;
+}
+
+p.description-game {
+  font-size: 35px;
 }

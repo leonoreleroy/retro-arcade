@@ -15,57 +15,89 @@
 </head>
 
 <body>
-    <section class="hero is-primary">
-        <!-- Hero head: will stick at the top -->
-        <div class="hero-head">
-            <nav class="navbar">
-                <div class="container">
-                    <div class="navbar-brand">
-                        <a class="navbar-item">
-                            <img src="img/logo-resize.png" alt="Logo">
-                        </a>
-                    </div>
-            </nav>
+  <section class="hero is-primary">
+    <!-- Hero head: will stick at the top -->
+    <div class="hero-head">
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item">
+              <img src="img/logo-resize.png" alt="Logo">
+            </a>
+          </div>
+      </nav>
+    </div>
+    </div>
+  </section>
+
+  <!-- Carousel -->
+
+  <div class="slider">
+
+    <a href="#slide-1">1</a>
+    <a href="#slide-2">2</a>
+    <a href="#slide-3">3</a>
+    <a href="#slide-4">4</a>
+    <a href="#slide-5">5</a>
+
+    <div class="slides">
+      <div id="slide-1">
+        <div class="content-slide">
+          <img class="slider" src="./img/game1.png" alt="">
+          <div class=text-slide>
+            <p class="name-game">Jeu 1</p>
+            <!-- <p class="description-game">Lorem ipsum dolor sit amet</p> -->
+          </div>
+
         </div>
       </div>
-    </section>
+      <div id="slide-2">
+        2
+      </div>
+      <div id="slide-3">
+        3
+      </div>
+      <div id="slide-4">
+        4
+      </div>
+      <div id="slide-5">
+        5
+      </div>
+    </div>
+  </div>
 
-        <section class="arrow-buttons">
-          <div class="arrow-buttons-column">
-              <a class="arrow-top" href="javascript:void(0);">&#9650</a>
-              <a class="arrow-bottom" href="javascript:void(0);">&#9660</a>
-          </div>
-          <div class="arrow-buttons-row">
-              <a class="arrow-left" href="javascript:void(0);">&#9664</a>
-              <a class="arrow-right" href="javascript:void(0);">&#9654</a>
-          </div>
-        </section>
-      
-          <section class="buttons-right">
-            <a class="roundButton button-A" href="javascript:void(0);">A</a>
-            <a class="roundButton button-B" href="javascript:void(0);">B</a>
-          </section>
+  <section class="arrow-buttons">
+    <div class="arrow-buttons-row">
+      <a class="arrow-left" href="javascript:void(0);">&#9664</a>
+      <a class="arrow-right" href="javascript:void(0);">&#9654</a>
+    </div>
+  </section>
 
-          <section class="buttons-bottom">
-              <div class="container" id="app">
-                  <div class="modal">
-                    <div class="modal-background"></div>
-                    <div class="modal-content">
-                      <h1>Explication</h1>
-                      <p>A : Commencer à jouer</p>
-                      <p>B : Voter</p>
-                      <p>Flèches : changer de jeux et voir plus d'image du jeux</p>
-                    </div>
-                    <button class="modal-close"></button>
-                  </div>
-                  
-                  <div class="explications">
-                    <button class="button roundButton" id="showModal"></button>
-                    <p class="info-button">Explications</p>
-                  </div>
-                </div>
-                
-                <!-- <div class="container" id="app">
+  <section class="buttons-right">
+    <a class="roundButton button-A" href="javascript:void(0);">A</a>
+    <a class="roundButton button-B" href="javascript:void(0);">B</a>
+  </section>
+
+  <section class="buttons-bottom">
+    <div class="container" id="app">
+      <div class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+          <h1>Explication</h1>
+          <p>A : Commencer à jouer</p>
+          <p>B : Voter</p>
+          <p>Flèches : changer de jeux et voir plus d'image du jeux</p>
+        </div>
+        <button class="modal-close"></button>
+      </div>
+
+      <div class="explications">
+        <button class="button roundButton" id="showModal"></button>
+        <p class="info-button">Explications</p>
+      </div>
+    </div>
+
+    <!-- <div class="container" id="app">
                     <div class="modal">
                       <div class="modal-background"></div>
                       <div class="modal-content">
@@ -90,11 +122,10 @@
                       <p class="info-button">Classement des jeux</p>
                     </p>
                   </div> -->
-                <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
-                <script  src="js/index.js"></script>
-          </section>
-          
- 
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src="js/index.js"></script>
+  </section>
+
 </body>
 
 </html>
